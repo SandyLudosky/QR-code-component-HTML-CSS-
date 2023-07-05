@@ -1,0 +1,80 @@
+body {
+    padding: 0;
+    margin: 0;
+    height: 95vh;
+    background-color: hsl(212, 45%, 89%);
+    font-family: 'Outfit', sans-serif;
+    font-size: 15px;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+}
+
+.card {
+    padding: 1.2rem;
+    width: 220px;
+    height: 400px;
+    background-color: hsl(227, 47%, 96%);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    align-items: center;
+}
+
+.qr-code {
+    width: inherit;
+    height: 60%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.text {
+    margin-top: 0.5rem;
+    width: 90%;
+
+}
+.title {
+    font-weight: 700;
+}
+.description {
+    font-size: 12px;
+    color: hsl(212, 45%, 89%);
+    margin: 0.5rem 0;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 600px) {
+    .card {
+        width: 70%;
+        display: flex;
+        align-items: center;
+
+    }
+    .text {
+        width: 80%;
+    }
+    .qr-code {
+        width: 95%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .description {
+        font-size: 13px;
+    }
+}
+
